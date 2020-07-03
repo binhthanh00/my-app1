@@ -4,7 +4,7 @@ import {createStore} from 'redux'
 const counterReducer = (state,action={type:'DONOTHING'}) =>{
     switch(action.type){
         case 'INCREASE':
-            let value = state.counter.value
+            let value = state.counter.value;
             return {
                 counter: {
                     ...state.counter,
